@@ -13,7 +13,7 @@ public class GenerateEnemy : MonoBehaviour
         StartCoroutine(enemyDrop());
     }
 IEnumerator enemyDrop(){
-    while(enemyCount < 10){
+    while(enemyCount < 40){
         xPos =Random.Range(4,27);
         zPos = Random.Range(-28,25);
         Debug.Log(zPos);

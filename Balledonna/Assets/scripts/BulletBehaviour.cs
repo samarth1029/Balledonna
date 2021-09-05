@@ -18,6 +18,10 @@ public class BulletBehaviour : MonoBehaviour
             
         }
         explosion.Play();
+        
+        KillCounter.instance.killCount++;
+        KillCounter.instance.UpdateKillCounterUI();
         Destroy(this.gameObject,0.1f);
+        
     }
 }
