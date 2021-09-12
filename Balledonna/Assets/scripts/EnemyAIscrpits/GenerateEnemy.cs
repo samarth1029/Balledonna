@@ -18,7 +18,7 @@ IEnumerator enemyDrop(){
         zPos = Random.Range(-28,25);
         Debug.Log(zPos);
         Instantiate(TheEnemy,new Vector3(xPos,1,zPos),Quaternion.identity);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(5f);
         enemyCount+=1;
     }
 }
